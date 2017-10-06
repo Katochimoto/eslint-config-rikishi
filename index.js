@@ -10,16 +10,6 @@ module.exports = {
     "eslint:recommended"
   ],
 
-  "ecmaFeatures": {
-    "arrowFunctions": true,
-    "blockBindings": true,
-    "classes": true,
-    "experimentalObjectRestSpread": true,
-    "jsx": true,
-    "spread": true,
-    "templateStrings": true
-  },
-
   "globals": {
     "afterEach": false,
     "beforeEach": false,
