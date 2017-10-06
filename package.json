@@ -1,0 +1,8 @@
+{
+  "name": "eslint-config-rikishi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Katochimoto/eslint-config-rikishi.git",
+  "author": "Katochimoto <bufpost@yandex.ru>",
+  "license": "MIT"
+}
