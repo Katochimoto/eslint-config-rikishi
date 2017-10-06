@@ -1,183 +1,95 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'amd': true,
-    'jasmine': true
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jasmine": true,
+    "node": true
   },
 
-  'extends': 'eslint:recommended',
+  "extends": [
+    "eslint:recommended"
+  ],
 
-  'rules': {
-    'array-bracket-spacing': [
-      'warn',
-      'never'
+  "ecmaFeatures": {
+    "arrowFunctions": true,
+    "blockBindings": true,
+    "classes": true,
+    "experimentalObjectRestSpread": true,
+    "jsx": true,
+    "spread": true,
+    "templateStrings": true
+  },
+
+  "globals": {
+    "afterEach": false,
+    "beforeEach": false,
+    "describe": false,
+    "expect": false,
+    "exports": false,
+    "it": false,
+    "module": false,
+    "modules": false,
+    "React": false,
+    "ReactDOM": false,
+    "require": false,
+    "sinon": false
+  },
+
+  "rules": {
+    "indent": [
+      2,
+      2
     ],
-
-    'camelcase': [
-      'error',
+    "quotes": [
+      2,
+      "single"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "array-bracket-spacing": [
+      2,
+      "always"
+    ],
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "max-len": [
+      2,
+      200,
+      4
+    ],
+    "vars-on-top": [
+      0
+    ],
+    "no-inner-declarations": [
+      0
+    ],
+    "key-spacing": [
+      0
+    ],
+    "valid-jsdoc": [
+      2,
       {
-        'properties': 'always'
+        "prefer": {
+          "return": "returns"
+        },
+        "requireReturn": false,
+        "requireParamDescription": false,
+        "requireReturnDescription": false
       }
     ],
-
-    'comma-dangle': [
-      'error',
-      'never'
-    ],
-
-    'comma-style': [
-      'error',
-      'last'
-    ],
-
-    'curly': [
-      'error',
-      'all'
-    ],
-
-    'dot-notation': 'error',
-
-    'indent': [
-      'error',
-      4,
-      {
-        'ArrayExpression': 'first',
-        'SwitchCase': 1,
-        'MemberExpression': 'off',
-        'ObjectExpression': 'first',
-        'VariableDeclarator': 1
-      }
-    ],
-
-    'key-spacing': [
-      'error',
-      {
-        'mode': 'minimum'
-      }
-    ],
-
-    'keyword-spacing': [
-      'error',
-      {}
-    ],
-
-    'linebreak-style': [
-      'error',
-      'unix'
-    ],
-
-    'max-len': [
-      'warn',
-      {
-        'ignoreComments': true,
-        'ignoreUrls': true
-      }
-    ],
-
-    'new-cap': [
-      'warn',
-      {
-        'capIsNewExceptions': [
-          'Deferred', 'Event'
-        ]
-      }
-    ],
-
-    'no-empty': 'error',
-
-    'no-implicit-coercion': [
-      'error',
-      {
-        'boolean': false,
-        'number': false,
-        'string': false
-      }
-    ],
-
-    'no-mixed-spaces-and-tabs': 'error',
-
-    'no-multi-str': 'error',
-
-    'no-trailing-spaces': 'error',
-
-    'no-with': 'error',
-
-    'object-curly-newline': [
-      'error',
-      {
-        'minProperties': 1
-      }
-    ],
-
-    'one-var': [
-      'error',
-      'always'
-    ],
-
-    'operator-linebreak': [
-      'error',
-      'after'
-    ],
-
-    'padded-blocks': [
-      'warn',
-      'never'
-    ],
-
-    'quote-props': [
-      'error',
-      'as-needed',
-      {
-        'keywords': true
-      }
-    ],
-
-    'semi': [
-      'error',
-      'always'
-    ],
-
-    'space-before-blocks': [
-      'error',
-      'always'
-    ],
-
-    'space-before-function-paren': [
-      'error',
-      'never'
-    ],
-
-    'space-in-parens': [
-      'error',
-      'never'
-    ],
-
-    'space-unary-ops': [
-      'error',
-      {
-        'words': false,
-        'nonwords': false
-      }
-    ],
-
-    'spaced-comment': [
-      'warn',
-      'always'
-    ],
-
-    'quotes': [
-      'error',
-      'single',
-      {
-        'avoidEscape': true
-      }
-    ],
-
-    'yoda': [
-      'error',
-      'never'
-    ],
-
-    'wrap-iife': 'error'
+    "react/jsx-uses-vars": [2],
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "always",
+      "asyncArrow": "ignore"
+    }]
   }
 };
