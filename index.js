@@ -10,6 +10,15 @@ module.exports = {
     "eslint:recommended"
   ],
 
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+
   "globals": {
     "afterEach": false,
     "beforeEach": false,
@@ -26,56 +35,25 @@ module.exports = {
   },
 
   "rules": {
-    "indent": [
-      2,
-      2
-    ],
-    "quotes": [
-      2,
-      "single"
-    ],
-    "linebreak-style": [
-      2,
-      "unix"
-    ],
-    "semi": [
-      2,
-      "always"
-    ],
-    "array-bracket-spacing": [
-      2,
-      "always"
-    ],
-    "object-curly-spacing": [
-      2,
-      "always"
-    ],
-    "max-len": [
-      2,
-      200,
-      4
-    ],
-    "vars-on-top": [
-      0
-    ],
-    "no-inner-declarations": [
-      0
-    ],
-    "key-spacing": [
-      0
-    ],
-    "valid-jsdoc": [
-      2,
-      {
-        "prefer": {
-          "return": "returns"
-        },
-        "requireReturn": false,
-        "requireParamDescription": false,
-        "requireReturnDescription": false
-      }
-    ],
-    "react/jsx-uses-vars": [2],
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "max-len": ["error", 200, 4],
+    "vars-on-top": "off",
+    "no-inner-declarations": "off",
+    "key-spacing": "off",
+    "valid-jsdoc": ["error", {
+      "prefer": {
+        "return": "returns"
+      },
+      "requireReturn": false,
+      "requireParamDescription": false,
+      "requireReturnDescription": false
+    }],
+    "react/jsx-uses-vars": ["error"],
     "space-before-function-paren": ["error", {
       "anonymous": "always",
       "named": "always",
